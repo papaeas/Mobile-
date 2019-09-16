@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <!-- เรียกใช้ style sheet และ javascript จาก onsen ui -->
+       <link rel="stylesheet" href="css/onsenui.css">
+       <link rel="stylesheet" href="css/onsen-css-components.min.css">
+       <script src="js/onsenui.min.js"></script>
+       <!-- เรียกใช้ style sheet และ javascript จาก onsen ui -->
+      
+       <script src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
+       <link rel="stylesheet" href="index.html">
+       <link rel="stylesheet" href="manu.css">
+       <script src="food.js"></script>
+       
+</head> 
+<body>
+   
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+      <ons-page>
+        <ons-list>
+            
+          <ons-list-item onclick="fn.load('home.html')" tappable>
+            Logout
+          </ons-list-item>
+         
+        </ons-list>
+      </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+  </ons-splitter>
+  
+  <template id="home.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+            FoodPanther
+        </div>
+      
+      </ons-toolbar>
+      <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
+        
+
+          <ons-card>
+              <center>
+                  <ons-row>
+                      <ons-col onclick="fastfood()"style="border:1px solid #ccc; height: 130px;">
+                          <img src="Fastfood.jpg" alt="Fast Food" style="width:130px;height:100px;">
+                          <center>Fast Food</center></img>
+                      </ons-col>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <script>
+                          function fastfood() {
+                            window.location.href='resturantlist.html'
+                          }
+                          
+                          </script>
+                      <ons-col style="border:1px solid #ccc; height: 130px;">
+                          <img src="kababs.jpg" alt="Kebabs" style="width:130px;height:100px;">
+                          <center>Kebabs</center></img>
+                      </ons-col>
+                  </ons-row><br /><br />
+
+                  <ons-row>
+                      <ons-col style="border:1px solid #ccc; height: 130px;">
+                          <img src="chinese.jpg" alt="Chinese" style="width:130px;height:100px;">
+                          <center>Chinese</center></img>
+                      </ons-col>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <ons-col style="border:1px solid #ccc; height: 130px;">
+                          <img src="pizza.png" alt="Pizza" style="width:130px;height:100px;">
+                          <center>Pizza</center></img>
+                      </ons-col>
+                  </ons-row><br /><br />
+
+                  <ons-row>
+                      <ons-col style="border:1px solid #ccc; height: 130px;">
+                          <img src="Vegeterian.jpg" alt="Vegeterian" style="width:130px;height:100px;">
+                          <center>Vegeterian</center></img>
+                      </ons-col>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <ons-col style="border:1px solid #ccc; height: 130px;">
+                          <img src="ต้มยำ.jpg" alt="Thai" style="width:130px;height:100px;">
+                          <center>Thai</center></img>
+                      </ons-col>
+
+                  </ons-row><br /><br />
+                  <h2>more...</h2>
+
+
+
+
+
+      </p>
+    </ons-page>
+  </template>
+  
+  <template id="settings.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Settings
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </template>
+  
+  <template id="about.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          About
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </template>
+             
+    </body>
+
+    </html>

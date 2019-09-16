@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <!-- เรียกใช้ style sheet และ javascript จาก onsen ui -->
+       <link rel="stylesheet" href="css/onsenui.css">
+       <link rel="stylesheet" href="css/onsen-css-components.min.css">
+       <script src="js/onsenui.min.js"></script>
+       <!-- เรียกใช้ style sheet และ javascript จาก onsen ui -->
+      
+       <script src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
+       <link rel="stylesheet" href="index.html">
+       <link rel="stylesheet" href="manu.css">
+       
+</head> 
+<body>
+        <ons-navigator id="myNavigator" page="menunoodle.html">
+        </ons-navigator>
+        <center>
+            <ons-page id='mypage'>
+                <ons-navigator title="Navigator" var="myNavigator">
+                    <ons-page>
+                        <ons-toolbar>
+                            <div class="center">FoodPanther</div>
+                        </ons-toolbar>
+                        <ons-card>
+                            <ons-scroller>
+                                <div class="center">
+                                    <center><img src="noodle.jpg" alt="Chinese" style="width:130px;height:100px;">
+                                    </center>
+                                    
+                                    <p style="opacity: 0.8; padding-top: 0px;">
+                                      
+                                    </p>
+                                </div>
+    
+                                <ons-list>
+                                    <ons-row>
+                                        <ons-col width="100px">
+                                            <ons-list-header>Quantity</ons-list-header>
+                                        </ons-col>
+                                        <ons-col>
+                                            <ons-list-header>Name of Dish</ons-list-header>
+                                        </ons-col>
+                                        <ons-col width="70px">
+                                            <ons-list-header>Price</ons-list-header>
+                                        </ons-col>
+                    
+                                    </ons-row>
+    
+                                    <ons-row>
+                                        <ons-col width="100px">
+                                            <ons-list-item modifier="tappable">1</ons-list-item>
+                                        </ons-col>
+                                        <ons-col>
+                                            <ons-list-item modifier="tappable">Chicken Chowmein</ons-list-item>
+                                        </ons-col>
+                                        <ons-col width="70px">
+                                            <ons-list-item modifier="tappable">$30</ons-list-item>
+                                        </ons-col>
+                                    </ons-row>
+    
+                                    <ons-row>
+                                        <ons-col width="100px">
+                                            <ons-list-item modifier="tappable">2</ons-list-item>
+                                        </ons-col>
+                                        <ons-col>
+                                            <ons-list-item modifier="tappable">Beef Stir Fry</ons-list-item>
+                                        </ons-col>
+                                        <ons-col width="70px">
+                                            <ons-list-item modifier="tappable">10</ons-list-item>
+                                        </ons-col>
+                                    </ons-row>
+    
+                                   
+                                </ons-list>
+                            </ons-scroller></br>
+                            <div>
+                               <center>
+                                    <div>
+                                            <button class="button button--light" style="background-color:
+                                                     rgb(241, 241, 231);width: 360px; border-radius: 10px; margin: 0 auto;">Total  : $40
+                                            </button>
+                                        </div>
+                               </center>
+                            </br> 
+                            <center>
+                                <div>
+                                    <button class="button button--light" style="background-color:
+                                             rgb(241, 241, 231);width: 360px; border-radius: 10px; margin: 0 auto;">Enter
+                                        coupon if you have any
+                                    </button>
+                                </div>
+                            </center>
+                            </div></br>
+                            <center>
+                                <p>
+                                    <h3>Pay via</h3>
+                                    <ons-button id="registerbt" class="button--large--cta"
+                                        style="background-color: rgb(132, 15, 155);width: 280px; border-radius: 10px; margin: 0 auto;">
+                                        Credit Card</ons-button></br>
+    
+                                    <ons-button id="registerbt" class="button--large--cta"
+                                        style="background-color: rgb(33, 5, 189);width: 280px; border-radius: 10px; margin: 0 auto;">
+                                        PayPal</ons-button></br>
+    
+                                    <ons-button id="registerbt" class="button--large--cta"
+                                        style="background-color: rgb(13, 2, 15);width: 280px; border-radius: 10px; margin: 0 auto;">
+                                        Cash on Delivery</ons-button></br>
+                                </p>
+                            </center>
+                        </ons-card>
+                    </ons-page>
+        </center>
+        </body>
+        </html>

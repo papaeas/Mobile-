@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <!-- เรียกใช้ style sheet และ javascript จาก onsen ui -->
+       <link rel="stylesheet" href="css/onsenui.css">
+       <link rel="stylesheet" href="css/onsen-css-components.min.css">
+       <script src="js/onsenui.min.js"></script>
+       <!-- เรียกใช้ style sheet และ javascript จาก onsen ui -->
+      
+       <script src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
+       <link rel="stylesheet" href="index.html">
+       <link rel="stylesheet" href="manu.css">
+       
+</head> 
+<body>
+        <ons-page id="helloworld-page">
+                <ons-toolbar>
+                  <div class="center"></div>
+                  <div class="right">
+                    <ons-toolbar-button>
+                      <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+                    </ons-toolbar-button>
+                  </div>
+                </ons-toolbar>
+              
+                <p style="text-align: center">
+                  <ons-button>Click me!</ons-button>
+                </p>
+              
+                <script>
+                  ons.getScriptPage().onInit = function() {
+                    console.log('This is a lifecycle hook!', this);
+                  };
+                </script>
+              </ons-page>
+</body>
+</html>
